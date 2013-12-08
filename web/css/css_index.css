@@ -80,15 +80,18 @@ div#top {
     height: 40px;    
 }
 
+#logo {
+    position: relative;
+    top: 1px;
+    left: 5px
+}
 
 
 div#content {    
     width: 600px;
     height: 300px;
     margin: 0 auto;
-    border: 1px solid black;
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin-top: 150px;
 
 }
 
@@ -105,18 +108,17 @@ div#content {
     background-position-x: 5px;
     background-position-y: 1px;
     padding-left: 45px;
-    
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
 
 }
 
 #content form input[type=text]:hover {
-  
+
     border: 1px solid  #999999;
 }
 #content form input[type=text]:focus {
-  
+
     border: 1px solid  #4DA6FF;
 }
 
@@ -131,9 +133,43 @@ table#table_busca {
     margin: 0 auto;
 }
 
+
+
+#content form input[type=submit] {
+    margin-top: 20px;    
+    width: 140px;
+    height: 35px;
+    border: 1px solid #0f80d1;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 17px;
+    background: rgb(71,163,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(71,163,255,1) 0%, rgba(38,128,239,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(71,163,255,1)), color-stop(100%,rgba(38,128,239,1))); /* Chrome,Safari4+ */
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+
+
+}
+
+#content form input[type=submit]:hover {
+    box-shadow: 0 0 5px #4DA6FF; 
+
+}
+
+#busca_site {
+    margin-left: 88px;
+
+
+}
+
+#busca_imagens {
+    margin-left: 50px;
+}
+
 div#rodape {
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #fafafb;
     border-top: 1px solid #DDDDDD;
     border-bottom: 1px solid #DDDDDD;
     height: 40px;   
@@ -141,7 +177,4 @@ div#rodape {
     bottom: 0;
     left: 0;
 
-
-
 }
-

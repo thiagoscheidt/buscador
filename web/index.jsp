@@ -9,19 +9,23 @@
     <body>
         <div id="bodyWrapper">
             <div id="top">
-                <h1> </h1>
+                <img id="logo" src="imgs/logo.png"/>
             </div>
             <div id="content">
                 <form name="busca">
-                    <img class="busca_logo" src="imgs/busca_logo.png"/>
+                    <img width="auto" height="auto" class="busca_logo" src="imgs/busca_logo.png"/>
                     <table id="table_busca">
-                        <tr><td><input type="text" name="busca_campo" id="busca_campo" class="botao"/></td></tr>
+                        <tr><td><input type="text" placeholder="Palavra chave...." name="busca_sites" id="busca_sites" class="botao"/></td></tr>
                         <tr><td colspan="2"> <input type="submit" name="busca_sites" id="busca_site"/>
                                 <input type="submit" name="busca_imagens" id="busca_imagens"/></td></tr>
                     </table>
                 </form>
             </div>
-            <div id="rodape">
+
+        </div>
+        <div id="rodape">
+            <div id="menu_rodape">
+                
             </div>
         </div>
     </body>
