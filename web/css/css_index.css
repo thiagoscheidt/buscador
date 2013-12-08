@@ -1,0 +1,147 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0; 
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+::selection {
+    color: #ffffff;
+    background: #555555;
+}
+::-moz-selection {
+    color: #ffffff;
+    background: #555555;
+}
+
+@font-face {
+    font-family: "TimeBurner";
+    src: url(timeburner_regular.ttf);
+}
+
+div#bodyWrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: auto;
+
+}
+
+div#top {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+    height: 40px;    
+}
+
+
+
+div#content {    
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+}
+
+#content form input[type=text] {
+    width: 455px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid  #DDDDDD;
+    color: #4C4C4C;
+    font-family: TimeBurner;
+    font-weight: 800;
+    background-image: url('../imgs/busca_bg.png');
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 1px;
+    padding-left: 45px;
+    
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+
+}
+
+#content form input[type=text]:hover {
+  
+    border: 1px solid  #999999;
+}
+#content form input[type=text]:focus {
+  
+    border: 1px solid  #4DA6FF;
+}
+
+img.busca_logo {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    left: 90px;
+}
+
+table#table_busca {
+    margin: 0 auto;
+}
+
+div#rodape {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    height: 40px;   
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+
+
+}
+
