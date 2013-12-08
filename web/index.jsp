@@ -9,6 +9,7 @@
     <body>
         <div id="bodyWrapper">
             <div id="top">
+                <h1> </h1>
             </div>
             <div id="content">
                 <form name="busca">
