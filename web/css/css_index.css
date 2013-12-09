@@ -143,6 +143,7 @@ table#table_busca {
     border-radius: 3px;
     color: #ffffff;
     font-size: 17px;
+    cursor: pointer;
     background: rgb(71,163,255); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(71,163,255,1) 0%, rgba(38,128,239,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(71,163,255,1)), color-stop(100%,rgba(38,128,239,1))); /* Chrome,Safari4+ */
@@ -177,4 +178,48 @@ div#rodape {
     bottom: 0;
     left: 0;
 
+}
+
+div#menu_rodape {
+    height: 39px;
+    position: relative;
+    width: 150px;
+    float: left;
+}
+
+div#menu_rodape ul {
+    float: left;
+    margin-top: 15px;
+}
+
+div#menu_rodape ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+div#menu_rodape ul li a {
+    color: #333333;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+}
+
+
+div#menu_rodape ul li a:hover {
+    color: #ff3333;
+}
+
+div#rodape_right {
+    float: right;
+    width: 300px;
+    height: 39px;
+}
+
+div#rodape_right h1 {
+    margin-top: 15px;
+    color: #444444;
+    
+}
+
+div#rodape_right h1 span {
+    color: #2693FF;
 }
