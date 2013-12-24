@@ -20,6 +20,7 @@ body {
 }
 ol, ul {
     list-style: none;
+
 }
 blockquote, q {
     quotes: none;
@@ -64,12 +65,18 @@ table {
     src: url(timeburner_regular.ttf);
 }
 
+html, body {
+    height:100%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
 div#bodyWrapper {
     margin: 0 auto;
     width: 100%;
-    height: auto;
+    min-height: 100%;
     position: relative;
-    overflow: auto;
+    overflow: no-content;
 
 }
 
@@ -82,10 +89,123 @@ div#top {
 
 #logo {
     position: relative;
+    float: left;
     top: 1px;
-    left: 5px
+    left: 5px;
+    opacity: 0.8;
+    -webkit-transition: 0.5s;
+
 }
 
+#logo:hover {
+    opacity: 1;
+}
+
+div#top_right {
+    float: right;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 30px;
+}
+#name_user {
+    float: left;
+    margin-top: 14px;
+    margin-right: 15px;
+    font-family: Arial;
+    color: #444444;
+    font-size: 14px;
+    font-weight: inherit;
+
+
+}
+div#icon_user{
+    width: auto;
+    height: auto;
+    float: right;
+    margin-top: 1px;
+}
+
+div#icon_user img {
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    cursor: pointer;
+}
+
+div#icon_user ul li {
+    position: relative;
+}
+
+
+div#icon_user ul > li > ul  {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    border: 1px solid #DDDDDD;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition:  0s; 
+
+
+}
+
+div#icon_user ul li ul li {
+    visibility: hidden;
+    -webkit-transition: 0.8s ;
+    height: 0;
+}
+
+
+div#icon_user ul li ul li a {
+    color: #444444; 
+    display: block;   
+    white-space: nowrap;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    border-top: 0;
+    border-right:  5px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;    
+      -webkit-transition: 0.2s ;
+
+
+}
+
+div#icon_user ul li ul li a:hover {
+    color: #FFFFFF; 
+    display: block;   
+    white-space: nowrap;
+    background-color: #0f80d1;
+    text-decoration: none;
+    border-top: 0;
+    border-right:  5px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;   
+
+}
+
+
+div#icon_user  li:hover  > ul.submenu {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+div#icon_user li:hover > ul li {
+    visibility: visible;
+    height: 25px;
+    
+
+
+
+}
 
 div#content {    
     width: 600px;
@@ -123,10 +243,9 @@ div#content {
 }
 
 img.busca_logo {
-    position: relative;
     margin-top: 50px;
     margin-bottom: 20px;
-    left: 90px;
+    margin-left: 100px;
 }
 
 table#table_busca {
@@ -175,6 +294,7 @@ div#rodape {
     border-bottom: 1px solid #DDDDDD;
     height: 40px;   
     position: absolute;
+
     bottom: 0;
     left: 0;
 
@@ -183,7 +303,7 @@ div#rodape {
 div#menu_rodape {
     height: 39px;
     position: relative;
-    width: 150px;
+    width: auto;
     float: left;
 }
 
@@ -210,14 +330,15 @@ div#menu_rodape ul li a:hover {
 
 div#rodape_right {
     float: right;
-    width: 300px;
+    margin-right: 10px;
+    width: auto;
     height: 39px;
 }
 
 div#rodape_right h1 {
     margin-top: 15px;
     color: #444444;
-    
+
 }
 
 div#rodape_right h1 span {
