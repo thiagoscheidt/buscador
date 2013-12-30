@@ -84,7 +84,7 @@ div#top {
     width: 100%;
     background-color: #FFFFFF;
     border-bottom: 1px solid #DDDDDD;
-    height: 40px;    
+    height: 40px;      
 }
 
 #logo {
@@ -141,23 +141,21 @@ div#icon_user ul > li > ul  {
     position: absolute;
     right: 0;
     width: auto;
-    height: auto;
+    height: 0; 
     background-color: #FFFFFF;
     border-radius: 3px;
     border: 1px solid #DDDDDD;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    opacity: 0;
     visibility: hidden;
-    -webkit-transition:  0s; 
-
+    -webkit-transition:  0.4s ;
 
 }
 
 div#icon_user ul li ul li {
     visibility: hidden;
-    -webkit-transition: 0.8s ;
     height: 0;
+    opacity: 0;
+    -webkit-transition:   0.2s ;
+
 }
 
 
@@ -172,7 +170,7 @@ div#icon_user ul li ul li a {
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;    
-      -webkit-transition: 0.2s ;
+    -webkit-transition: 0.1s ;
 
 
 }
@@ -195,14 +193,17 @@ div#icon_user ul li ul li a:hover {
 div#icon_user  li:hover  > ul.submenu {
     opacity: 1;
     visibility: visible;
+    height: 130px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
 
 }
 
 div#icon_user li:hover > ul li {
     visibility: visible;
+    opacity: 1;
     height: 25px;
-    
-
 
 
 }
